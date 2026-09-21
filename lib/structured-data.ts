@@ -1,0 +1,76 @@
+export function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "College Survival Guide",
+    url: "https://college-survival-guide.vercel.app",
+    description:
+      "Practical guides, student tools and useful advice for academics, careers, money, productivity and everyday college life.",
+    inLanguage: "en-IN",
+  };
+}
+
+export function organizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "College Survival Guide",
+    url: "https://college-survival-guide.vercel.app",
+  };
+}
+
+export function articleSchema({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+}: {
+  title: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    url,
+    datePublished,
+    dateModified,
+    author: {
+      "@type": "Organization",
+      name: "College Survival Guide",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "College Survival Guide",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+  };
+}
+
+export function faqSchema(
+  questions: {
+    question: string;
+    answer: string;
+  }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: questions.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}
