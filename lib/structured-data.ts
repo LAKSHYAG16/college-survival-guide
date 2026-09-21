@@ -3,7 +3,7 @@ export function websiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "College Survival Guide",
-    url: "https://college-survival-guide.vercel.app",
+    url: "https://college-survival-guide-plum.vercel.app",
     description:
       "Practical guides, student tools and useful advice for academics, careers, money, productivity and everyday college life.",
     inLanguage: "en-IN",
@@ -15,7 +15,7 @@ export function organizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "College Survival Guide",
-    url: "https://college-survival-guide.vercel.app",
+    url: "https://college-survival-guide-plum.vercel.app",
   };
 }
 

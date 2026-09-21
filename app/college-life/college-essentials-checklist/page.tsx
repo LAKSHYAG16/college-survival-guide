@@ -9,6 +9,9 @@ export const metadata = {
   title: "College Essentials Checklist for First-Year Students",
   description:
     "A practical college essentials checklist for first-year students covering documents, clothing, electronics, study supplies, personal items and hostel essentials.",
+  alternates: {
+    canonical: "/college-life/college-essentials-checklist",
+  },
 };
 
 const sections = [
@@ -93,7 +96,7 @@ export default function CollegeEssentialsChecklistPage() {
     title: "College Essentials Checklist for First-Year Students",
     description:
       "A practical college essentials checklist covering documents, clothes, electronics, study supplies, hostel items and everyday necessities for first-year students.",
-    url: "https://college-survival-guide.vercel.app/college-life/college-essentials-checklist",
+    url: "https://college-survival-guide-plum.vercel.app/college-life/college-essentials-checklist",
     datePublished: "2026-09-21",
     dateModified: "2026-09-21",
   });

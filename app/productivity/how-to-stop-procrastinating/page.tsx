@@ -9,6 +9,9 @@ export const metadata = {
   title: "How to Stop Procrastinating as a College Student",
   description:
     "Learn how to stop procrastinating as a college student with practical techniques for starting assignments, studying consistently, managing distractions and meeting deadlines.",
+  alternates: {
+    canonical: "/productivity/how-to-stop-procrastinating",
+  },
 };
 
 const techniques = [
@@ -48,7 +51,7 @@ export default function StopProcrastinatingPage() {
     title: "How to Stop Procrastinating as a College Student",
     description:
       "Practical techniques for college students to reduce procrastination, start assignments earlier, manage distractions and build consistent study habits.",
-    url: "https://college-survival-guide.vercel.app/productivity/how-to-stop-procrastinating",
+    url: "https://college-survival-guide-plum.vercel.app/productivity/how-to-stop-procrastinating",
     datePublished: "2026-09-21",
     dateModified: "2026-09-21",
   });

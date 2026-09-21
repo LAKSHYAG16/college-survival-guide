@@ -13,6 +13,9 @@ export const metadata = {
   title: "Productivity & Time Management for College Students",
   description:
     "Practical productivity and time-management guides for college students, including procrastination, organization, planning and balancing college responsibilities.",
+  alternates: {
+    canonical: "/productivity",
+  },
 };
 
 export default function ProductivityPage() {

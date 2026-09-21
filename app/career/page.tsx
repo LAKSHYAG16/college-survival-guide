@@ -13,6 +13,9 @@ export const metadata = {
   title: "Career & Internship Guides for College Students",
   description:
     "Practical career advice for college students, including internship applications, resumes, GitHub profiles and early career preparation.",
+  alternates: {
+    canonical: "/career",
+  },
 };
 
 export default function CareerPage() {

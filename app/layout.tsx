@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { websiteSchema, organizationSchema } from "@/lib/structured-data";
 
-const siteUrl = "https://college-survival-guide.vercel.app";
+const siteUrl = "https://college-survival-guide-plum.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

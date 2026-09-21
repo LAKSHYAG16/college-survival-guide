@@ -13,6 +13,9 @@ export const metadata = {
   title: "College Life Guides & Essentials | College Survival Guide",
   description:
     "Practical college life guides including first-year essentials, college checklists, routines and advice for adjusting to student life.",
+  alternates: {
+    canonical: "/college-life",
+  },
 };
 
 export default function CollegeLifePage() {

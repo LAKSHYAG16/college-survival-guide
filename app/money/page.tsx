@@ -13,6 +13,9 @@ export const metadata = {
   title: "Student Budget & Money Guides | College Survival Guide",
   description:
     "Practical money and budgeting advice for college students, including monthly budgeting, saving money and managing everyday expenses.",
+  alternates: {
+    canonical: "/money",
+  },
 };
 
 export default function MoneyPage() {

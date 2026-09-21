@@ -9,6 +9,9 @@ export const metadata = {
   title: "How to Make a Resume for an Internship With No Experience",
   description:
     "Learn how to make a resume for an internship with no experience. See what to include, how to present projects and skills, and how to structure your first student resume.",
+  alternates: {
+    canonical: "/career/resume-for-internship-no-experience",
+  },
 };
 
 const resumeSections = [
@@ -83,7 +86,7 @@ export default function ResumeInternshipPage() {
     title: "How to Make a Resume for an Internship With No Experience",
     description:
       "Learn how to create a strong internship resume with no previous work experience, including education, projects, skills, certifications and achievements.",
-    url: "https://college-survival-guide.vercel.app/career/resume-for-internship-no-experience",
+    url: "https://college-survival-guide-plum.vercel.app/career/resume-for-internship-no-experience",
     datePublished: "2026-09-21",
     dateModified: "2026-09-21",
   });

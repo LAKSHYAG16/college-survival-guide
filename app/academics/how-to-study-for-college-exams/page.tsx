@@ -9,6 +9,9 @@ export const metadata = {
   title: "How to Study Effectively for College Exams",
   description:
     "Learn how to study effectively for college exams with practical revision strategies, study planning techniques, active recall, practice questions and exam preparation tips.",
+  alternates: {
+    canonical: "/academics/how-to-study-for-college-exams",
+  },
 };
 
 const studyMethods = [
@@ -48,7 +51,7 @@ export default function StudyForCollegeExamsPage() {
     title: "How to Study Effectively for College Exams",
     description:
       "Practical study techniques for college exams including active recall, spaced revision, practice questions, focused study sessions and exam preparation.",
-    url: "https://college-survival-guide.vercel.app/academics/how-to-study-for-college-exams",
+    url: "https://college-survival-guide-plum.vercel.app/academics/how-to-study-for-college-exams",
     datePublished: "2026-09-21",
     dateModified: "2026-09-21",
   });

@@ -31,6 +31,9 @@ export const metadata = {
   title: "Student Tools & Calculators | College Survival Guide",
   description:
     "Free student tools including a CGPA calculator, attendance calculator and study planner designed for college students.",
+  alternates: {
+    canonical: "/tools",
+  },
 };
 
 export default function ToolsPage() {
@@ -71,9 +74,8 @@ export default function ToolsPage() {
           {tools.map((tool) => (
             <Link
               href={tool.href}
-              className={`tool-card ${
-                tool.status === "COMING SOON" ? "tool-disabled" : ""
-              }`}
+              className={`tool-card ${tool.status === "COMING SOON" ? "tool-disabled" : ""
+                }`}
               key={tool.title}
             >
               <span className="tool-icon">{tool.icon}</span>

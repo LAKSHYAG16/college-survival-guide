@@ -13,6 +13,9 @@ export const metadata = {
   title: "College Study & Exam Guides | College Survival Guide",
   description:
     "Practical study tips, exam preparation strategies and academic advice to help college students study effectively and improve their performance.",
+  alternates: {
+    canonical: "/academics",
+  },
 };
 
 export default function AcademicsPage() {
