@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   description:
     "Practical guides, student tools and useful advice for academics, careers, money, productivity and everyday college life.",
 
+  verification: {
+    google: "bkX5kM1rYm2L_9P12IDDzSKU_DWeLq_Vpi-DeFXueTs",
+  },
+
   keywords: [
     "college survival guide",
     "college student guide",
