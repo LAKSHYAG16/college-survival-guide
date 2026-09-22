@@ -12,6 +12,33 @@ export const metadata = {
   alternates: {
     canonical: "/college-life/college-essentials-checklist",
   },
+  openGraph: {
+    title: "College Essentials Checklist for First-Year Students",
+    description:
+      "A practical college essentials checklist covering documents, clothes, electronics, study supplies, hostel items and everyday necessities for first-year students.",
+    url: "https://college-survival-guide-plum.vercel.app/college-life/college-essentials-checklist",
+    siteName: "College Survival Guide",
+    type: "article",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://college-survival-guide-plum.vercel.app/images/college-essentials-checklist.png",
+        width: 1600,
+        height: 900,
+        alt: "College essentials checklist for first-year students",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "College Essentials Checklist for First-Year Students",
+    description:
+      "A practical checklist of essentials for first-year college students.",
+    images: [
+      "https://college-survival-guide-plum.vercel.app/images/college-essentials-checklist.png",
+    ],
+  },
 };
 
 const sections = [

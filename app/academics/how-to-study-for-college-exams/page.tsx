@@ -12,6 +12,33 @@ export const metadata = {
   alternates: {
     canonical: "/academics/how-to-study-for-college-exams",
   },
+  openGraph: {
+    title: "How to Study Effectively for College Exams",
+    description:
+      "Practical study strategies for college exams, including active recall, spaced revision, practice questions and focused study sessions.",
+    url: "https://college-survival-guide-plum.vercel.app/academics/how-to-study-for-college-exams",
+    siteName: "College Survival Guide",
+    type: "article",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://college-survival-guide-plum.vercel.app/images/study-for-college-exams.png",
+        width: 1600,
+        height: 900,
+        alt: "How to study effectively for college exams",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Study Effectively for College Exams",
+    description:
+      "Practical study strategies for preparing effectively for college exams.",
+    images: [
+      "https://college-survival-guide-plum.vercel.app/images/study-for-college-exams.png",
+    ],
+  },
 };
 
 const studyMethods = [

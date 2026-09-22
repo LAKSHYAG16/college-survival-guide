@@ -12,6 +12,33 @@ export const metadata = {
   alternates: {
     canonical: "/productivity/how-to-stop-procrastinating",
   },
+  openGraph: {
+    title: "How to Stop Procrastinating as a College Student",
+    description:
+      "Practical techniques to stop procrastinating, break assignments into smaller tasks and build consistent study habits.",
+    url: "https://college-survival-guide-plum.vercel.app/productivity/how-to-stop-procrastinating",
+    siteName: "College Survival Guide",
+    type: "article",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://college-survival-guide-plum.vercel.app/images/stop-procrastinating-college.png",
+        width: 1600,
+        height: 900,
+        alt: "How to stop procrastinating as a college student",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Stop Procrastinating as a College Student",
+    description:
+      "Practical ways for college students to stop procrastinating and stay consistent.",
+    images: [
+      "https://college-survival-guide-plum.vercel.app/images/stop-procrastinating-college.png",
+    ],
+  },
 };
 
 const techniques = [
