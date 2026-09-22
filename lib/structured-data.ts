@@ -32,22 +32,35 @@ export function articleSchema({
   datePublished: string;
   dateModified: string;
 }) {
+  const normalizeDate = (date: string) => {
+    if (date.length === 10) {
+      return `${date}T00:00:00+05:30`;
+    }
+
+    return date;
+  };
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description,
     url,
-    datePublished,
-    dateModified,
+    datePublished: normalizeDate(datePublished),
+    dateModified: normalizeDate(dateModified),
+
     author: {
       "@type": "Organization",
       name: "College Survival Guide",
+      url: "https://college-survival-guide-plum.vercel.app",
     },
+
     publisher: {
       "@type": "Organization",
       name: "College Survival Guide",
+      url: "https://college-survival-guide-plum.vercel.app",
     },
+
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": url,
