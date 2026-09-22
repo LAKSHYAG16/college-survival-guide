@@ -9,9 +9,9 @@ export const metadata = {
   title: "Student Budget Guide: Managing Monthly Expenses",
   description:
     "Learn how to manage monthly expenses as a college student with a simple student budget, spending categories, saving strategies and practical money-management tips.",
-    alternates: {
-  canonical: "/money/student-budget-guide",
-},
+  alternates: {
+    canonical: "/money/student-budget-guide",
+  },
 };
 
 const budgetCategories = [
@@ -54,6 +54,8 @@ export default function StudentBudgetGuidePage() {
     url: "https://college-survival-guide-plum.vercel.app/money/student-budget-guide",
     datePublished: "2026-09-21",
     dateModified: "2026-09-21",
+    image:
+      "https://college-survival-guide-plum.vercel.app/images/student-budget-guide.png",
   });
 
   const faq = faqSchema([

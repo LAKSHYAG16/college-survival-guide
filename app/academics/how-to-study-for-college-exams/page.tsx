@@ -54,6 +54,8 @@ export default function StudyForCollegeExamsPage() {
     url: "https://college-survival-guide-plum.vercel.app/academics/how-to-study-for-college-exams",
     datePublished: "2026-09-21",
     dateModified: "2026-09-21",
+    image:
+      "https://college-survival-guide-plum.vercel.app/images/study-for-college-exams.png",
   });
 
   const faq = faqSchema([

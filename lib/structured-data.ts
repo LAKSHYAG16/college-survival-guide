@@ -25,12 +25,14 @@ export function articleSchema({
   url,
   datePublished,
   dateModified,
+  image,
 }: {
   title: string;
   description: string;
   url: string;
   datePublished: string;
   dateModified: string;
+  image: string;
 }) {
   const normalizeDate = (date: string) => {
     if (date.length === 10) {
@@ -43,9 +45,13 @@ export function articleSchema({
   return {
     "@context": "https://schema.org",
     "@type": "Article",
+
     headline: title,
     description,
     url,
+
+    image: [image],
+
     datePublished: normalizeDate(datePublished),
     dateModified: normalizeDate(dateModified),
 

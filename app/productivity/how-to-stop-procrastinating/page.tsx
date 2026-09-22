@@ -54,6 +54,8 @@ export default function StopProcrastinatingPage() {
     url: "https://college-survival-guide-plum.vercel.app/productivity/how-to-stop-procrastinating",
     datePublished: "2026-09-21",
     dateModified: "2026-09-21",
+    image:
+      "https://college-survival-guide-plum.vercel.app/images/stop-procrastinating-college.png",
   });
 
   const faq = faqSchema([

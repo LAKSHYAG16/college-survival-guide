@@ -89,6 +89,8 @@ export default function ResumeInternshipPage() {
     url: "https://college-survival-guide-plum.vercel.app/career/resume-for-internship-no-experience",
     datePublished: "2026-09-21",
     dateModified: "2026-09-21",
+    image:
+      "https://college-survival-guide-plum.vercel.app/images/resume-internship-no-experience.png",
   });
 
   const faq = faqSchema([

@@ -99,6 +99,8 @@ export default function CollegeEssentialsChecklistPage() {
     url: "https://college-survival-guide-plum.vercel.app/college-life/college-essentials-checklist",
     datePublished: "2026-09-21",
     dateModified: "2026-09-21",
+    image:
+      "https://college-survival-guide-plum.vercel.app/images/college-essentials-checklist.png",
   });
 
   const faq = faqSchema([
