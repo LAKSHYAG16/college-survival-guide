@@ -1,21 +1,18 @@
-import {
-  articleSchema,
-  faqSchema,
-} from "@/lib/structured-data";
-
+import { articleSchema, faqSchema } from "@/lib/structured-data";
 import Link from "next/link";
 
 export const metadata = {
   title: "How to Make a Resume for an Internship With No Experience",
   description:
-    "Learn how to make a resume for an internship with no experience. See what to include, how to present projects and skills, and how to structure your first student resume.",
+    "Learn how to make a resume for an internship with no experience. See a practical resume sample, what to include, how to present projects and skills, and how to structure your first student resume.",
   alternates: {
     canonical: "/career/resume-for-internship-no-experience",
   },
+
   openGraph: {
     title: "How to Make a Resume for an Internship With No Experience",
     description:
-      "A practical guide to creating an internship resume using education, projects, skills, certifications and achievements.",
+      "A practical guide and resume sample for creating an internship resume when you have little or no professional experience.",
     url: "https://college-survival-guide-plum.vercel.app/career/resume-for-internship-no-experience",
     siteName: "College Survival Guide",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "How to Make a Resume for an Internship With No Experience",
     description:
-      "A practical guide to creating an internship resume when you have little or no experience.",
+      "A practical guide and resume sample for creating an internship resume when you have little or no professional experience.",
     images: [
       "https://college-survival-guide-plum.vercel.app/images/resume-internship-no-experience.png",
     ],
@@ -112,10 +109,10 @@ export default function ResumeInternshipPage() {
   const article = articleSchema({
     title: "How to Make a Resume for an Internship With No Experience",
     description:
-      "Learn how to create a strong internship resume with no previous work experience, including education, projects, skills, certifications and achievements.",
+      "Learn how to create a strong internship resume with no previous work experience, including a practical resume sample, education, projects, skills, certifications and achievements.",
     url: "https://college-survival-guide-plum.vercel.app/career/resume-for-internship-no-experience",
     datePublished: "2026-09-21",
-    dateModified: "2026-09-21",
+    dateModified: "2026-09-29",
     image:
       "https://college-survival-guide-plum.vercel.app/images/resume-internship-no-experience.png",
   });
@@ -136,6 +133,11 @@ export default function ResumeInternshipPage() {
       answer:
         "Focus on your education, projects, skills, certifications, achievements and other relevant experiences that demonstrate your ability to contribute.",
     },
+    {
+      question: "What should an internship resume look like with no experience?",
+      answer:
+        "A student internship resume can focus on education, relevant projects, technical skills, certifications and achievements instead of professional work experience.",
+    },
   ]);
 
   return (
@@ -153,6 +155,7 @@ export default function ResumeInternshipPage() {
           __html: JSON.stringify(faq),
         }}
       />
+
       {/* Hero */}
       <section className="article-hero">
         <div className="article-hero-inner">
@@ -210,6 +213,102 @@ export default function ResumeInternshipPage() {
             </ul>
           </div>
 
+          {/* Resume sample */}
+          <section className="article-section">
+            <h2>Resume Sample for an Internship With No Experience</h2>
+
+            <p>
+              If you are applying for your first internship, your resume does
+              not need to contain previous employment. A simple one-page resume
+              can use your education, projects, skills and achievements to show
+              what you can contribute.
+            </p>
+
+            <p>
+              The following is a general example. Replace the placeholder
+              information with your own details and adjust the sections based
+              on the internship you are applying for.
+            </p>
+
+            <div className="article-callout">
+              <p className="eyebrow">SAMPLE RESUME</p>
+
+              <h3>YOUR NAME</h3>
+
+              <p>
+                Computer Science Student
+                <br />
+                City, Country
+                <br />
+                email@example.com | +91 XXXXX XXXXX
+                <br />
+                LinkedIn | GitHub | Portfolio
+              </p>
+
+              <h3>EDUCATION</h3>
+
+              <p>
+                <strong>B.Tech in Computer Science Engineering</strong>
+                <br />
+                Your College / University
+                <br />
+                Expected Graduation: 2027
+                <br />
+                CGPA: X.XX / 10
+              </p>
+
+              <h3>SKILLS</h3>
+
+              <p>
+                <strong>Programming:</strong> Python, C++, Java
+                <br />
+                <strong>Web:</strong> HTML, CSS, JavaScript, React
+                <br />
+                <strong>Data / AI:</strong> Machine Learning, Pandas,
+                NumPy
+                <br />
+                <strong>Tools:</strong> Git, GitHub, VS Code
+              </p>
+
+              <h3>PROJECTS</h3>
+
+              <p>
+                <strong>Student Expense Tracker</strong>
+                <br />
+                • Built a web application for tracking and categorizing
+                monthly student expenses.
+                <br />
+                • Added expense categories, monthly summaries and local data
+                storage.
+                <br />
+                • Used React and JavaScript to create the user interface.
+              </p>
+
+              <p>
+                <strong>Academic Machine Learning Project</strong>
+                <br />
+                • Developed a machine learning model to solve a classification
+                problem using a public dataset.
+                <br />
+                • Performed data preprocessing, feature preparation and model
+                evaluation.
+                <br />
+                • Compared multiple models using appropriate evaluation
+                metrics.
+              </p>
+
+              <h3>CERTIFICATIONS & ACHIEVEMENTS</h3>
+
+              <p>
+                • Relevant technical certification
+                <br />
+                • College hackathon participation
+                <br />
+                • Coding competition or academic achievement
+              </p>
+            </div>
+          </section>
+
           {/* Sections */}
           {resumeSections.map((section) => (
             <section className="article-section" key={section.title}>
@@ -228,9 +327,15 @@ export default function ResumeInternshipPage() {
             </section>
           ))}
 
-          {/* Projects */}
+          {/* Project writing */}
           <section className="article-section">
             <h2>How to Write Projects on Your Resume</h2>
+
+            <p>
+              When you don't have professional experience, your projects can
+              provide evidence that you can actually apply what you have
+              learned.
+            </p>
 
             <p>
               Instead of simply writing the name of a project, explain what you
@@ -239,7 +344,16 @@ export default function ResumeInternshipPage() {
             </p>
 
             <div className="article-callout">
-              <p className="eyebrow">EXAMPLE</p>
+              <p className="eyebrow">WEAK EXAMPLE</p>
+
+              <h3>Expense Tracker - React</h3>
+
+              <p>
+                This tells the recruiter the project name and technology, but
+                provides very little information about what you actually did.
+              </p>
+
+              <p className="eyebrow">STRONGER EXAMPLE</p>
 
               <h3>Student Expense Tracker</h3>
 
@@ -251,10 +365,32 @@ export default function ResumeInternshipPage() {
             </div>
 
             <p>
-              This is more useful than simply writing "Expense Tracker -
-              React" because it gives the reader evidence of what you actually
-              built.
+              Whenever possible, describe your contribution using clear action
+              words such as built, developed, implemented, analyzed, designed,
+              automated or optimized.
             </p>
+          </section>
+
+          {/* ATS */}
+          <section className="article-section">
+            <h2>How to Make an Internship Resume ATS-Friendly</h2>
+
+            <p>
+              Many companies use applicant tracking systems to organize
+              applications. A simple, text-based resume is generally easier
+              for software and recruiters to process than a heavily designed
+              document.
+            </p>
+
+            <ul>
+              <li>Use clear section headings.</li>
+              <li>Use standard job-related terminology.</li>
+              <li>Include skills that actually match the internship.</li>
+              <li>Avoid filling the resume with graphics or unnecessary icons.</li>
+              <li>Keep formatting consistent throughout the document.</li>
+              <li>Use a readable font and appropriate spacing.</li>
+              <li>Save the resume in the format requested by the employer.</li>
+            </ul>
           </section>
 
           {/* No experience */}
@@ -277,6 +413,30 @@ export default function ResumeInternshipPage() {
               <li>Relevant certifications</li>
               <li>Student organizations</li>
             </ul>
+
+            <p>
+              Even a small project can be useful if you clearly explain the
+              problem, your contribution, the technologies used and the result.
+            </p>
+          </section>
+
+          {/* Tailoring */}
+          <section className="article-section">
+            <h2>How to Tailor Your Resume to an Internship</h2>
+
+            <p>
+              You do not need to completely rewrite your resume for every
+              application. Instead, compare the internship description with
+              your existing skills and projects.
+            </p>
+
+            <ul>
+              <li>Identify the main skills mentioned in the job description.</li>
+              <li>Move your most relevant skills higher in the skills section.</li>
+              <li>Highlight projects related to the internship.</li>
+              <li>Use relevant terminology when it accurately describes your experience.</li>
+              <li>Remove unrelated information when space is limited.</li>
+            </ul>
           </section>
 
           {/* Mistakes */}
@@ -290,7 +450,62 @@ export default function ResumeInternshipPage() {
               <li>Adding skills you cannot actually demonstrate</li>
               <li>Using an unprofessional email address</li>
               <li>Including irrelevant personal information</li>
-              <li>Writing project descriptions without explaining your contribution</li>
+              <li>
+                Writing project descriptions without explaining your
+                contribution
+              </li>
+              <li>Using inconsistent fonts, spacing or formatting</li>
+              <li>Sending the same generic resume to every internship</li>
+            </ul>
+          </section>
+
+          {/* One page */}
+          <section className="article-section">
+            <h2>Should a College Student's Resume Be One Page?</h2>
+
+            <p>
+              For most students applying for early internships, a focused
+              one-page resume is enough. The goal is not to include everything
+              you have ever done. The goal is to make the most relevant
+              information easy to find.
+            </p>
+
+            <p>
+              If you have several strong projects, achievements or substantial
+              experience, the appropriate length can depend on the internship
+              and your background. Prioritize relevance over simply filling
+              space.
+            </p>
+          </section>
+
+          {/* Related SEO links */}
+          <section className="article-section">
+            <h2>Prepare for Your Internship Application</h2>
+
+            <p>
+              Your resume is only one part of preparing for college and
+              internship applications. You can also improve your study habits
+              and manage your finances while preparing for your career.
+            </p>
+
+            <ul>
+              <li>
+                <Link href="/academics/how-to-study-for-college-exams">
+                  Learn how to study effectively for college exams
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/money/student-budget-guide">
+                  Read the student budget guide for managing monthly expenses
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/productivity/how-to-stop-procrastinating">
+                  Learn how to stop procrastinating as a college student
+                </Link>
+              </li>
             </ul>
           </section>
 
@@ -317,6 +532,11 @@ export default function ResumeInternshipPage() {
               <li>
                 <span className="check-icon">✓</span>
                 <span>Your listed skills are relevant to the internship</span>
+              </li>
+
+              <li>
+                <span className="check-icon">✓</span>
+                <span>Your resume uses clear and consistent formatting</span>
               </li>
 
               <li>
@@ -351,9 +571,9 @@ export default function ResumeInternshipPage() {
               <h3>How long should a college student's resume be?</h3>
 
               <p>
-                For a student applying for an early internship, keeping the
-                resume concise and focused is usually more useful than trying
-                to fill multiple pages.
+                For a student applying for an early internship, a concise
+                one-page resume is usually sufficient. Focus on information
+                that is relevant to the position.
               </p>
             </div>
 
@@ -366,13 +586,23 @@ export default function ResumeInternshipPage() {
                 for academic performance.
               </p>
             </div>
+
+            <div className="faq-item">
+              <h3>What should I put on my resume if I have no experience?</h3>
+
+              <p>
+                Focus on your education, projects, skills, certifications,
+                achievements, coursework and other relevant experiences that
+                demonstrate your ability to contribute.
+              </p>
+            </div>
           </section>
 
           {/* Related */}
           <section className="article-related">
             <p className="eyebrow">KEEP BUILDING</p>
 
-            <h2>More Career Guides</h2>
+            <h2>More College Guides</h2>
 
             <div className="related-grid">
               <Link
@@ -398,6 +628,20 @@ export default function ResumeInternshipPage() {
 
                 <p>
                   Simple techniques for getting important work done on time.
+                </p>
+              </Link>
+
+              <Link
+                href="/money/student-budget-guide"
+                className="related-card"
+              >
+                <span>MONEY</span>
+
+                <h3>Student Budget Guide: Managing Monthly Expenses</h3>
+
+                <p>
+                  Learn how to organize monthly expenses and build a practical
+                  student budget.
                 </p>
               </Link>
             </div>
