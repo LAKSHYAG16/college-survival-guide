@@ -80,7 +80,7 @@ export default function StudyForCollegeExamsPage() {
       "Practical study techniques for college exams including active recall, spaced revision, practice questions, focused study sessions and exam preparation.",
     url: "https://college-survival-guide-plum.vercel.app/academics/how-to-study-for-college-exams",
     datePublished: "2026-09-21",
-    dateModified: "2026-09-21",
+    dateModified: "2026-09-29",
     image:
       "https://college-survival-guide-plum.vercel.app/images/study-for-college-exams.png",
   });
@@ -200,6 +200,66 @@ export default function StudyForCollegeExamsPage() {
             </div>
           </section>
 
+          {/* Best ways to study */}
+          <section className="article-section">
+            <p className="eyebrow">BEST WAYS TO STUDY</p>
+
+            <h2>Best Ways to Study for College Exams</h2>
+
+            <p>
+              The best study method depends on the subject and how much time you have,
+              but effective exam preparation usually involves more than reading your
+              notes repeatedly. Combine understanding, active recall, practice and
+              revision.
+            </p>
+
+            <h3>1. Understand the topic first</h3>
+
+            <p>
+              Before trying to memorize information, make sure you understand the main
+              idea. Break difficult topics into smaller concepts and identify anything
+              you cannot explain clearly.
+            </p>
+
+            <h3>2. Use active recall</h3>
+
+            <p>
+              Close your notes and try to explain the concept from memory. You can also
+              create questions and answer them without looking at the material.
+            </p>
+
+            <h3>3. Practice questions</h3>
+
+            <p>
+              Solve previous exam questions, textbook exercises and sample problems.
+              Practice shows whether you can actually apply what you studied.
+            </p>
+
+            <h3>4. Revise difficult topics repeatedly</h3>
+
+            <p>
+              Instead of spending your entire study session on one difficult chapter,
+              return to it across multiple study sessions. This gives you several
+              opportunities to identify and fix gaps in your understanding.
+            </p>
+
+            <h3>5. Explain what you learned</h3>
+
+            <p>
+              Try explaining a difficult concept in simple language without looking at
+              your notes. If you cannot explain it clearly, that is a useful signal that
+              you should review the topic again.
+            </p>
+
+            <h3>6. Practice under exam-like conditions</h3>
+
+            <p>
+              Before the exam, attempt some questions without your notes and give
+              yourself a realistic time limit. This can help you identify topics that
+              still need revision.
+            </p>
+          </section>
+
           {/* Planning */}
           <section className="article-section">
             <p className="eyebrow">PLANNING</p>
@@ -220,6 +280,54 @@ export default function StudyForCollegeExamsPage() {
                 </li>
               ))}
             </ul>
+          </section>
+
+          {/* Example schedule */}
+          <section className="article-section">
+            <p className="eyebrow">EXAMPLE PLAN</p>
+
+            <h2>Simple College Exam Study Schedule</h2>
+
+            <p>
+              You do not need to follow the exact same schedule every day. Use this as a
+              simple starting point and adjust the amount of study time according to
+              your subjects and exam dates.
+            </p>
+
+            <ul className="checklist">
+              <li>
+                <span className="check-icon">✓</span>
+                <span>
+                  <strong>Session 1:</strong> Learn or review one important topic.
+                </span>
+              </li>
+
+              <li>
+                <span className="check-icon">✓</span>
+                <span>
+                  <strong>Session 2:</strong> Practice questions from that topic.
+                </span>
+              </li>
+
+              <li>
+                <span className="check-icon">✓</span>
+                <span>
+                  <strong>Session 3:</strong> Revise an older topic using active recall.
+                </span>
+              </li>
+
+              <li>
+                <span className="check-icon">✓</span>
+                <span>
+                  <strong>Session 4:</strong> Review mistakes and identify weak areas.
+                </span>
+              </li>
+            </ul>
+
+            <p>
+              If you have multiple exams, divide your sessions between subjects instead
+              of spending the entire day on one subject.
+            </p>
           </section>
 
           {/* Pomodoro */}
@@ -394,6 +502,18 @@ export default function StudyForCollegeExamsPage() {
                 retrieve information.
               </p>
             </div>
+
+            <div className="faq-item">
+              <h3>What are the best ways to study for college exams?</h3>
+
+              <p>
+                Active recall, spaced revision and practice questions are
+                commonly used approaches for strengthening your ability to
+                retrieve information.
+              </p>
+            </div>
+
+
           </section>
 
           {/* Related */}
@@ -412,8 +532,8 @@ export default function StudyForCollegeExamsPage() {
                 <h3>How to Stop Procrastinating as a College Student</h3>
 
                 <p>
-                  Simple techniques for getting assignments and studying done
-                  without last-minute stress.
+                  Simple techniques for getting assignments and studying done without
+                  last-minute stress.
                 </p>
               </Link>
 
@@ -426,8 +546,36 @@ export default function StudyForCollegeExamsPage() {
                 <h3>How to Make a Resume for an Internship With No Experience</h3>
 
                 <p>
-                  Build your first internship resume using your projects,
-                  education and skills.
+                  Build your first internship resume using your projects, education and
+                  skills.
+                </p>
+              </Link>
+
+              <Link
+                href="/money/student-budget-guide"
+                className="related-card"
+              >
+                <span>MONEY</span>
+
+                <h3>Student Budget Guide: Managing Monthly Expenses</h3>
+
+                <p>
+                  Learn how to organize monthly expenses and create a practical student
+                  budget.
+                </p>
+              </Link>
+
+              <Link
+                href="/college-life/college-essentials-checklist"
+                className="related-card"
+              >
+                <span>COLLEGE LIFE</span>
+
+                <h3>College Essentials Checklist for First-Year Students</h3>
+
+                <p>
+                  Prepare for college with a practical checklist of essential items and
+                  documents.
                 </p>
               </Link>
             </div>
