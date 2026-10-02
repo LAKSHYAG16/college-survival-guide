@@ -507,9 +507,7 @@ export default function StudyForCollegeExamsPage() {
               <h3>What are the best ways to study for college exams?</h3>
 
               <p>
-                Active recall, spaced revision and practice questions are
-                commonly used approaches for strengthening your ability to
-                retrieve information.
+                Useful approaches include understanding concepts, active recall, spaced revision, practice questions, explaining concepts in your own words and reviewing mistakes.
               </p>
             </div>
 

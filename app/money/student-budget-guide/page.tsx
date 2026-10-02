@@ -173,6 +173,98 @@ export default function StudentBudgetGuidePage() {
             </ul>
           </div>
 
+          {/* Paying for monthly expenses */}
+          <section className="article-section">
+            <p className="eyebrow">MONTHLY EXPENSES</p>
+
+            <h2>How Should Students Pay for Monthly Expenses?</h2>
+
+            <p>
+              College students can cover monthly expenses in different ways depending
+              on their situation. Common sources include family support, personal
+              savings, scholarships or stipends, part-time income where appropriate,
+              and other legitimate sources of student income.
+            </p>
+
+            <p>
+              The important part is to know how much money is actually available each
+              month before deciding how much you can spend. Avoid building your budget
+              around money you are not certain you will receive.
+            </p>
+
+            <h3>1. Start with your available monthly money</h3>
+
+            <p>
+              Add up the money you can realistically use for the month. This might
+              include a regular allowance, scholarship or stipend, savings allocated
+              for college expenses, or income from suitable part-time work.
+            </p>
+
+            <h3>2. Pay essential expenses first</h3>
+
+            <p>
+              Prioritize expenses that are difficult to avoid, such as accommodation,
+              required college costs, basic food and necessary transportation.
+            </p>
+
+            <h3>3. Set a limit for flexible spending</h3>
+
+            <p>
+              After accounting for essential costs, decide how much you can reasonably
+              spend on entertainment, eating out, shopping, subscriptions and other
+              optional expenses.
+            </p>
+
+            <h3>4. Divide your monthly limit into weekly limits</h3>
+
+            <p>
+              A monthly budget can feel difficult to manage when you only think about
+              one large number. Dividing your flexible spending limit into approximate
+              weekly amounts can make it easier to notice when you are spending faster
+              than planned.
+            </p>
+
+            <h3>5. Keep some money available for unexpected costs</h3>
+
+            <p>
+              If possible, avoid planning to spend every rupee available to you.
+              Unexpected transportation, academic or personal expenses can appear
+              during the month.
+            </p>
+          </section>
+
+          {/* Example budget */}
+          <section className="article-section">
+            <p className="eyebrow">EXAMPLE</p>
+
+            <h2>Example of a Simple Student Monthly Budget</h2>
+
+            <p>
+              The numbers below are only an example. Your actual budget will depend on
+              your city, accommodation, college expenses and available income.
+            </p>
+
+            <div className="article-callout">
+              <p className="eyebrow">EXAMPLE MONTHLY PLAN</p>
+
+              <h3>Money available: ₹12,000</h3>
+
+              <ul>
+                <li>Essential college and personal expenses: ₹3,500</li>
+                <li>Food and daily spending: ₹3,000</li>
+                <li>Transportation: ₹1,500</li>
+                <li>Entertainment and flexible spending: ₹1,500</li>
+                <li>Savings / unexpected expenses: ₹2,000</li>
+                <li>Other small expenses: ₹500</li>
+              </ul>
+
+              <p>
+                The purpose of an example like this is not to follow the exact amounts.
+                It is to give every rupee a purpose before the month begins.
+              </p>
+            </div>
+          </section>
+
           {/* Budgeting steps */}
           <section className="article-section">
             <p className="eyebrow">STEP BY STEP</p>
@@ -323,6 +415,41 @@ export default function StudentBudgetGuidePage() {
             </p>
           </section>
 
+          {/* Weekly spending */}
+          <section className="article-section">
+            <h2>How to Control Weekly Student Spending</h2>
+
+            <p>
+              Monthly budgets can become easier to manage when you give yourself a
+              rough weekly spending limit. For example, if you have ₹4,000 available
+              for flexible expenses during a month, you could divide that amount into
+              approximate weekly limits rather than spending freely until the money is
+              gone.
+            </p>
+
+            <ul className="checklist">
+              <li>
+                <span className="check-icon">✓</span>
+                <span>Check your remaining monthly balance once or twice a week.</span>
+              </li>
+
+              <li>
+                <span className="check-icon">✓</span>
+                <span>Keep essential expenses separate from entertainment spending.</span>
+              </li>
+
+              <li>
+                <span className="check-icon">✓</span>
+                <span>Notice recurring small purchases that add up.</span>
+              </li>
+
+              <li>
+                <span className="check-icon">✓</span>
+                <span>Adjust the following week's spending when necessary.</span>
+              </li>
+            </ul>
+          </section>
+
           {/* Mistakes */}
           <section className="article-section">
             <h2>Common Student Budgeting Mistakes</h2>
@@ -406,6 +533,14 @@ export default function StudentBudgetGuidePage() {
                 replacement electronics or unexpected college costs.
               </p>
             </div>
+
+            <div className="faq-item">
+              <h3>How should students pay for monthly expenses?</h3>
+
+              <p>
+                Students can use available sources such as family support, scholarships or stipends, personal savings allocated for college, and suitable part-time income where applicable. The important step is to budget only the money that is realistically available and prioritize essential expenses first.
+              </p>
+            </div>
           </section>
 
           {/* Related */}
@@ -424,8 +559,20 @@ export default function StudentBudgetGuidePage() {
                 <h3>College Essentials Checklist for First-Year Students</h3>
 
                 <p>
-                  A practical checklist for preparing for your first year of
-                  college.
+                  A practical checklist for preparing for your first year of college.
+                </p>
+              </Link>
+
+              <Link
+                href="/academics/how-to-study-for-college-exams"
+                className="related-card"
+              >
+                <span>ACADEMICS</span>
+
+                <h3>How to Study Effectively for College Exams</h3>
+
+                <p>
+                  Practical study methods, revision strategies and exam preparation tips.
                 </p>
               </Link>
 
@@ -438,8 +585,21 @@ export default function StudentBudgetGuidePage() {
                 <h3>How to Make a Resume for an Internship With No Experience</h3>
 
                 <p>
-                  Learn how to present your education, projects and skills on
-                  your first internship resume.
+                  Learn how to present your education, projects and skills on your first
+                  internship resume.
+                </p>
+              </Link>
+
+              <Link
+                href="/productivity/how-to-stop-procrastinating"
+                className="related-card"
+              >
+                <span>PRODUCTIVITY</span>
+
+                <h3>How to Stop Procrastinating as a College Student</h3>
+
+                <p>
+                  Simple techniques for getting important college work done on time.
                 </p>
               </Link>
             </div>
