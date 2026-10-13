@@ -1,6 +1,9 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import { websiteSchema, organizationSchema } from "@/lib/structured-data";
+import Navbar from "@/components/Navbar";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const siteUrl = "https://college-survival-guide-plum.vercel.app";
 
@@ -47,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "College Survival Guide | Practical Guides for Students",
     description:
-      "Practical guides, student tools and useful advice for academics, careers, money, productivity and everyday college life.",
+      "Practical guides, student tools and useful advice for college students.",
     url: siteUrl,
     siteName: "College Survival Guide",
     type: "website",
@@ -73,6 +76,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Navbar />
+        <Breadcrumbs />
+
         {children}
 
         <script

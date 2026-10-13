@@ -1609,3 +1609,57 @@ a {
     margin-top: 15px;
   }
 }
+
+
+/* Breadcrumb navigation */
+.breadcrumbs {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 24px 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.breadcrumbs a {
+  color: #b68af0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  color: #66616f;
+}
+
+.breadcrumb-current {
+  color: #b8b3c2;
+}
+
+@media (max-width: 600px) {
+  .breadcrumbs {
+    padding: 14px 20px 0;
+    font-size: 12px;
+  }
+}
