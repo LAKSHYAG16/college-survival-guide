@@ -80,7 +80,7 @@ export default function StudentBudgetGuidePage() {
       "A practical student budget guide covering monthly expenses, essential spending, saving money, hostel costs and simple ways to track your spending.",
     url: "https://college-survival-guide-plum.vercel.app/money/student-budget-guide",
     datePublished: "2026-09-21",
-    dateModified: "2026-09-21",
+    dateModified: "2026-10-13",
     image:
       "https://college-survival-guide-plum.vercel.app/images/student-budget-guide.png",
   });
@@ -264,6 +264,92 @@ export default function StudentBudgetGuidePage() {
               </p>
             </div>
           </section>
+
+
+          {/* ₹10,000 pocket-money example */}
+          <section className="article-section">
+            <p className="eyebrow">REALISTIC EXAMPLE</p>
+
+            <h2>How to Manage ₹10,000 Monthly Pocket Money as a College Student</h2>
+
+            <p>
+              If you receive ₹10,000 in monthly pocket money, planning your
+              spending before the month begins can help you enjoy college life
+              without running out of money too early. Your budget will depend
+              on whether accommodation and major college fees are already covered.
+            </p>
+
+            <p>
+              Here is one example of how you could divide ₹10,000 when major
+              accommodation costs are covered separately.
+            </p>
+
+            <div className="article-callout">
+              <p className="eyebrow">EXAMPLE MONTHLY PLAN</p>
+
+              <h3>Money available: ₹10,000</h3>
+
+              <ul>
+                <li>Food, snacks and drinks: ₹2,000</li>
+                <li>Local transport and occasional cabs: ₹1,200</li>
+                <li>Weekend outings and eating out: ₹1,200</li>
+                <li>Shopping and subscriptions: ₹800</li>
+                <li>College and personal expenses: ₹2,500</li>
+                <li>Savings and emergency expenses: ₹1,500</li>
+                <li>Other small expenses: ₹800</li>
+              </ul>
+
+              <p>
+                Total: ₹10,000. These amounts are illustrative, not fixed
+                recommendations. Adjust them to your city, lifestyle and
+                essential expenses.
+              </p>
+            </div>
+
+            <h3>How to Make Your Pocket Money Last</h3>
+
+            <ul className="checklist">
+              <li>
+                <span className="check-icon">✓</span>
+                <span>
+                  <strong>Set a weekly limit:</strong> Divide your flexible
+                  spending into weekly amounts instead of spending freely
+                  throughout the month.
+                </span>
+              </li>
+
+              <li>
+                <span className="check-icon">✓</span>
+                <span>
+                  <strong>Plan weekend outings:</strong> Set a reasonable
+                  limit for food, transport and entertainment before going out.
+                </span>
+              </li>
+
+              <li>
+                <span className="check-icon">✓</span>
+                <span>
+                  <strong>Track small purchases:</strong> Snacks, online
+                  orders and frequent cab rides can add up over time.
+                </span>
+              </li>
+
+              <li>
+                <span className="check-icon">✓</span>
+                <span>
+                  <strong>Save where possible:</strong> Set aside money for
+                  unexpected expenses if your essential costs allow it.
+                </span>
+              </li>
+            </ul>
+
+            <p>
+              If your ₹10,000 must also cover rent, hostel fees or other major
+              expenses, budget for those essentials first and reduce the
+              remaining categories accordingly.
+            </p>
+          </section>
+
 
           {/* Budgeting steps */}
           <section className="article-section">
@@ -539,6 +625,16 @@ export default function StudentBudgetGuidePage() {
 
               <p>
                 Students can use available sources such as family support, scholarships or stipends, personal savings allocated for college, and suitable part-time income where applicable. The important step is to budget only the money that is realistically available and prioritize essential expenses first.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>
+                How can I manage ₹10,000 monthly pocket money as a college student?
+              </h3>
+
+              <p>
+                Start by listing essential expenses such as food, transport and college supplies. Set limits for outings and shopping, track your spending each week, and keep money aside for unexpected costs if possible. If accommodation or college fees must come from the same ₹10,000, budget for those first.
               </p>
             </div>
           </section>
