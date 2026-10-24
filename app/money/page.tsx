@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 const guides = [
@@ -12,7 +13,7 @@ const guides = [
 export const metadata = {
   title: "Student Budget & Money Guides",
   description:
-    "Practical money and budgeting advice for college students, including monthly budgeting, saving money and managing everyday expenses.",
+    "Explore student budgeting tips, monthly expense planning, saving strategies and practical money-management advice for college students.",
   alternates: {
     canonical: "/money",
   },
@@ -31,8 +32,9 @@ export default function MoneyPage() {
         </h1>
 
         <p>
-          Simple budgeting and money-management advice to help college
-          students make the most of a limited budget.
+          Discover practical student budgeting tips, expense-tracking
+          methods and money-management advice to help you make the most
+          of a limited college budget.
         </p>
       </section>
 
@@ -44,8 +46,10 @@ export default function MoneyPage() {
           </div>
 
           <p>
-            Practical advice for managing everyday expenses, saving money and
-            building better financial habits during college.
+            Managing money during college means balancing essentials,
+            personal spending and unexpected costs. A realistic budget
+            can help you understand where your money goes and make
+            more confident spending decisions.
           </p>
         </div>
 
@@ -79,10 +83,50 @@ export default function MoneyPage() {
           </h2>
 
           <p>
-            Start by tracking your regular expenses such as food, transport,
-            subscriptions and entertainment. Once you understand your spending
-            habits, it becomes much easier to decide where you can save.
+            Begin by listing your available monthly funds and regular
+            expenses, such as food, transport, accommodation and
+            subscriptions. Set aside money for essential costs first,
+            then decide how much you can comfortably spend on
+            entertainment and other non-essential purchases.
           </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">BUDGETING BASICS</p>
+            <h2>Build better money habits in college.</h2>
+          </div>
+        </div>
+
+        <div className="guide-grid">
+          <div className="guide-card">
+            <h3>Track your spending</h3>
+            <p>
+              Record daily expenses and review them at the end of
+              each week. This helps you identify spending patterns
+              and avoid losing track of small purchases.
+            </p>
+          </div>
+
+          <div className="guide-card">
+            <h3>Plan essential expenses</h3>
+            <p>
+              Account for accommodation, meals, transport, study
+              supplies and other necessary costs before setting
+              a flexible spending limit.
+            </p>
+          </div>
+
+          <div className="guide-card">
+            <h3>Prepare for unexpected costs</h3>
+            <p>
+              When possible, set aside a small amount for emergencies
+              or unplanned college expenses so they are less likely
+              to disrupt your budget.
+            </p>
+          </div>
         </div>
       </section>
     </main>
