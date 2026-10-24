@@ -1616,50 +1616,58 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 18px 24px 0;
+  padding: 14px 24px;
+  position: relative;
+  z-index: 2;
   font-size: 13px;
-  line-height: 1.6;
 }
 
 .breadcrumbs ol {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 10px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .breadcrumbs li {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 8px;
-  min-width: 0;
+  gap: 10px;
+  color: #b9a0d5;
 }
 
 .breadcrumbs a {
-  color: #b68af0;
+  color: #b9a0d5;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .breadcrumbs a:hover {
   color: #ffffff;
-  text-decoration: underline;
 }
 
 .breadcrumb-separator {
-  color: #66616f;
+  color: #77717f;
 }
 
 .breadcrumb-current {
-  color: #b8b3c2;
+  color: #c9c3d1;
 }
 
 @media (max-width: 600px) {
   .breadcrumbs {
-    padding: 14px 20px 0;
+    padding: 12px 18px;
     font-size: 12px;
+  }
+
+  .breadcrumbs ol {
+    gap: 6px;
+  }
+
+  .breadcrumbs li {
+    gap: 6px;
   }
 }

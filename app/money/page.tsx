@@ -10,7 +10,7 @@ const guides = [
 ];
 
 export const metadata = {
-  title: "Student Budget & Money Guides | College Survival Guide",
+  title: "Student Budget & Money Guides",
   description:
     "Practical money and budgeting advice for college students, including monthly budgeting, saving money and managing everyday expenses.",
   alternates: {

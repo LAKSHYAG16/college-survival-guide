@@ -10,7 +10,7 @@ const guides = [
 ];
 
 export const metadata = {
-  title: "College Life Guides & Essentials | College Survival Guide",
+  title: "College Life Guides & Essentials",
   description:
     "Practical college life guides including first-year essentials, college checklists, routines and advice for adjusting to student life.",
   alternates: {

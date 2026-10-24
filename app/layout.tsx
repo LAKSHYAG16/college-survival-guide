@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "College Survival Guide | Practical Guides for Students",
+    default: "Practical Guides for Students",
     template: "%s | College Survival Guide",
   },
 

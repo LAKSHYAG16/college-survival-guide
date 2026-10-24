@@ -28,7 +28,7 @@ const tools = [
 ];
 
 export const metadata = {
-  title: "Student Tools & Calculators | College Survival Guide",
+  title: "Student Tools & Calculators",
   description:
     "Free student tools including a CGPA calculator, attendance calculator and study planner designed for college students.",
   alternates: {
