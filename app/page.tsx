@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 
@@ -5,37 +6,43 @@ const categories = [
   {
     icon: "✦",
     title: "Academics",
-    description: "Study smarter, prepare effectively, and handle college exams.",
+    description:
+      "Improve your study habits, prepare for college exams and manage academic responsibilities with practical advice.",
     href: "/academics",
   },
   {
     icon: "↗",
     title: "Career",
-    description: "Build your resume, find internships, and prepare for your career.",
+    description:
+      "Learn how to create your first resume, prepare for internships and develop skills for future career opportunities.",
     href: "/career",
   },
   {
     icon: "◈",
     title: "Money",
-    description: "Learn to manage your monthly expenses and save as a student.",
+    description:
+      "Understand student budgeting, track monthly expenses and build better money-management habits during college.",
     href: "/money",
   },
   {
     icon: "◇",
     title: "College Life",
-    description: "Navigate everyday college life with practical guides and checklists.",
+    description:
+      "Explore college essentials, everyday student challenges and useful tips for adjusting to campus life.",
     href: "/college-life",
   },
   {
     icon: "◷",
     title: "Productivity",
-    description: "Manage your time, beat procrastination, and stay organized.",
+    description:
+      "Manage deadlines, overcome procrastination and organize your time between classes, assignments and exams.",
     href: "/productivity",
   },
   {
     icon: "⌘",
     title: "Student Tools",
-    description: "Useful calculators and simple tools built for college students.",
+    description:
+      "Use free calculators and planning tools to track CGPA, check attendance and organize study sessions.",
     href: "/tools",
   },
 ];
@@ -45,35 +52,35 @@ const guides = [
     category: "COLLEGE LIFE",
     title: "College Essentials Checklist for First-Year Students",
     description:
-      "A practical checklist of things to prepare before starting college.",
+      "Prepare for your first year with a practical checklist covering everyday college essentials and important preparations.",
     href: "/college-life/college-essentials-checklist",
   },
   {
     category: "CAREER",
     title: "How to Make a Resume for an Internship With No Experience",
     description:
-      "Learn what to include in your first internship resume, even without work experience.",
+      "Learn how to highlight your education, projects and skills when creating your first internship resume.",
     href: "/career/resume-for-internship-no-experience",
   },
   {
     category: "ACADEMICS",
     title: "How to Study Effectively for College Exams",
     description:
-      "Simple strategies for planning your revision and preparing for exams.",
+      "Discover simple revision techniques, study planning strategies and practical ways to prepare for college exams.",
     href: "/academics/how-to-study-for-college-exams",
   },
   {
     category: "MONEY",
     title: "Student Budget Guide: Managing Monthly Expenses",
     description:
-      "Practical ways to plan your spending and manage a student budget.",
+      "Learn how to plan monthly expenses, understand spending habits and make better financial decisions as a student.",
     href: "/money/student-budget-guide",
   },
   {
     category: "PRODUCTIVITY",
     title: "How to Stop Procrastinating as a College Student",
     description:
-      "Simple techniques to get assignments and studying done without last-minute stress.",
+      "Explore practical ways to start assignments earlier, manage distractions and avoid unnecessary last-minute stress.",
     href: "/productivity/how-to-stop-procrastinating",
   },
 ];
@@ -82,20 +89,22 @@ const tools = [
   {
     icon: "∑",
     title: "CGPA Calculator",
-    description: "Calculate your CGPA quickly using your semester grades.",
+    description:
+      "Calculate your CGPA using semester grades and credits to better understand your academic progress.",
     href: "/tools/cgpa-calculator",
   },
   {
     icon: "%",
     title: "Attendance Calculator",
-    description: "Find out how many classes you need to attend or can miss.",
+    description:
+      "Check your attendance percentage and estimate how many classes you need to attend to reach your target.",
     href: "/tools/attendance-calculator",
   },
   {
     icon: "✓",
     title: "Study Planner",
     description:
-      "Plan your study sessions around classes, assignments, and exams.",
+      "Organize study sessions, assignments and exam preparation into a manageable schedule.",
     href: "/tools/study-planner",
   },
 ];
@@ -114,24 +123,18 @@ export default function Home() {
           <div className="hero-content">
             <p className="eyebrow">THE COLLEGE SURVIVAL GUIDE</p>
 
-            {/* <h1>
-              College doesn&apos;t come
-              <br />
-              with a <span>manual.</span>
-            </h1> */}
             <h1>
               Your <span>College Survival Guide.</span>
               <br />
               Everything you need in one place.
             </h1>
 
-            {/* <p className="hero-description">
-              Practical guides, useful tools and simple advice to help you
-              navigate college with confidence.
-            </p> */}
             <p className="hero-description">
-              Practical college guides, student tools and advice for academics,
-              internships, budgeting, productivity and everyday college life.
+              Explore practical college guides, student tools and
+              straightforward advice for academics, internships,
+              budgeting, productivity and everyday college life.
+              Find useful resources to help you make informed
+              decisions throughout your college journey.
             </p>
 
             <div className="hero-actions">
@@ -163,8 +166,10 @@ export default function Home() {
             </div>
 
             <p>
-              Everything organized into simple sections so you can find what
-              you need without digging through endless pages.
+              College comes with different challenges, from preparing
+              for exams to managing money and finding internships.
+              Browse our student resources by topic and find
+              guidance relevant to your current needs.
             </p>
           </div>
 
@@ -197,8 +202,10 @@ export default function Home() {
             </div>
 
             <p>
-              Straightforward guides designed around common college problems
-              and searches.
+              Read practical guides covering common college
+              challenges. Whether you're preparing for an exam,
+              creating your first resume or planning your monthly
+              budget, start with a topic that matters to you.
             </p>
           </div>
 
@@ -206,10 +213,14 @@ export default function Home() {
             {guides.map((guide, index) => (
               <Link
                 href={guide.href}
-                className={`guide-card ${index === 0 ? "guide-featured" : ""}`}
+                className={`guide-card ${
+                  index === 0 ? "guide-featured" : ""
+                }`}
                 key={guide.href}
               >
-                <span className="guide-category">{guide.category}</span>
+                <span className="guide-category">
+                  {guide.category}
+                </span>
 
                 <h3>{guide.title}</h3>
 
@@ -233,8 +244,10 @@ export default function Home() {
               </div>
 
               <p>
-                Simple tools designed to give students quick answers without
-                unnecessary complexity.
+                Save time on common academic tasks with simple
+                student tools. Calculate your CGPA, understand
+                your attendance and organize study sessions
+                without complicated setup.
               </p>
             </div>
 
@@ -242,19 +255,72 @@ export default function Home() {
               {tools.map((tool) => (
                 <Link
                   href={tool.href}
-                  className={`tool-card ${tool.href === "#" ? "tool-disabled" : ""
-                    }`}
+                  className="tool-card"
                   key={tool.title}
                 >
                   <span className="tool-icon">{tool.icon}</span>
+
                   <h3>{tool.title}</h3>
+
                   <p>{tool.description}</p>
 
                   <span className="tool-link">
-                    {tool.href === "#" ? "Coming soon" : "Open tool →"}
+                    Open tool →
                   </span>
                 </Link>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Additional Helpful Content */}
+        <section className="section">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">GETTING STARTED</p>
+
+              <h2>Build better habits during college.</h2>
+            </div>
+
+            <p>
+              Small improvements in planning, studying and
+              everyday decision-making can make college
+              responsibilities easier to manage.
+            </p>
+          </div>
+
+          <div className="guide-grid">
+            <div className="guide-card">
+              <h3>Plan your academic week</h3>
+
+              <p>
+                Review your class schedule, assignment deadlines
+                and upcoming exams at the beginning of each week.
+                Set aside time for revision so that important
+                work doesn't pile up at the last minute.
+              </p>
+            </div>
+
+            <div className="guide-card">
+              <h3>Prepare for future opportunities</h3>
+
+              <p>
+                Keep track of useful skills, academic projects
+                and extracurricular activities. These experiences
+                can help you build a stronger resume when
+                applying for internships.
+              </p>
+            </div>
+
+            <div className="guide-card">
+              <h3>Manage your daily responsibilities</h3>
+
+              <p>
+                Balance academics with personal commitments by
+                setting realistic priorities. Tracking expenses,
+                organizing tasks and maintaining a manageable
+                routine can reduce unnecessary stress.
+              </p>
             </div>
           </div>
         </section>
@@ -269,7 +335,9 @@ export default function Home() {
             <h2>Make college a little easier.</h2>
 
             <p>
-              Guides, tools and practical advice — organized for students.
+              Explore helpful college guides, academic calculators
+              and practical resources designed around everyday
+              student needs.
             </p>
 
             <Link href="#guides" className="button button-primary">
@@ -287,8 +355,8 @@ export default function Home() {
             </Link>
 
             <p>
-              Practical resources for navigating college with a little less
-              stress.
+              Practical resources for academics, career planning,
+              budgeting and everyday college life.
             </p>
           </div>
 
