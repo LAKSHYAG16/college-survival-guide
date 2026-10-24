@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 const guides = [
@@ -12,7 +13,7 @@ const guides = [
 export const metadata = {
   title: "Career & Internship Guides for College Students",
   description:
-    "Practical career advice for college students, including internship applications, resumes, GitHub profiles and early career preparation.",
+    "Explore internship resume tips, project ideas, GitHub portfolio advice and practical career preparation guides for college students.",
   alternates: {
     canonical: "/career",
   },
@@ -31,8 +32,9 @@ export default function CareerPage() {
         </h1>
 
         <p>
-          Practical guides for resumes, internships, projects, GitHub and
-          preparing for your first professional opportunity.
+          Discover practical guidance on internship applications,
+          resumes, college projects, GitHub portfolios and preparing
+          for your first professional opportunity.
         </p>
       </section>
 
@@ -44,8 +46,10 @@ export default function CareerPage() {
           </div>
 
           <p>
-            Whether you're looking for your first internship or building your
-            portfolio, start with practical steps you can actually follow.
+            You can begin preparing for internships before you have
+            formal work experience. Start with the skills you are
+            learning, the projects you have completed and the
+            opportunities you want to pursue.
           </p>
         </div>
 
@@ -79,10 +83,50 @@ export default function CareerPage() {
           </h2>
 
           <p>
-            College projects, coursework, technical skills, volunteering and
-            personal projects can all help demonstrate what you can do. Start
-            building evidence of your skills before you start applying.
+            College projects, coursework, technical skills,
+            volunteering and personal projects can help demonstrate
+            your abilities. Describe what you built, which tools you
+            used, what your responsibilities were and what you learned.
+            Keep your claims accurate and focus on evidence of your skills.
           </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">CAREER PREPARATION</p>
+            <h2>Three practical steps to get started.</h2>
+          </div>
+        </div>
+
+        <div className="guide-grid">
+          <div className="guide-card">
+            <h3>Build relevant projects</h3>
+            <p>
+              Choose projects that demonstrate skills related to the
+              internships you want. Document your work and explain
+              the problem your project solves.
+            </p>
+          </div>
+
+          <div className="guide-card">
+            <h3>Create a clear resume</h3>
+            <p>
+              Include your education, relevant skills, projects and
+              achievements. Use simple formatting and tailor your
+              resume to each suitable opportunity.
+            </p>
+          </div>
+
+          <div className="guide-card">
+            <h3>Prepare your portfolio</h3>
+            <p>
+              Keep your GitHub repositories organised, add useful
+              README files and make it easy for recruiters to
+              understand your contributions.
+            </p>
+          </div>
         </div>
       </section>
     </main>
