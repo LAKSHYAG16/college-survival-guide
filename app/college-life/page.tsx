@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 const guides = [
@@ -12,7 +13,7 @@ const guides = [
 export const metadata = {
   title: "College Life Guides & Essentials",
   description:
-    "Practical college life guides including first-year essentials, college checklists, routines and advice for adjusting to student life.",
+    "Explore college life tips, first-year essentials, packing checklists and practical advice to help students adjust to college.",
   alternates: {
     canonical: "/college-life",
   },
@@ -31,8 +32,9 @@ export default function CollegeLifePage() {
         </h1>
 
         <p>
-          Practical checklists, everyday advice and useful guides for making
-          college life a little easier.
+          Discover practical college life tips, useful checklists and
+          everyday advice to help you settle in, stay organised and
+          make the most of your student experience.
         </p>
       </section>
 
@@ -41,15 +43,14 @@ export default function CollegeLifePage() {
           <div>
             <p className="eyebrow">COLLEGE LIFE GUIDES</p>
 
-            <h2>
-              The things nobody gives you a manual for.
-            </h2>
+            <h2>The things nobody gives you a manual for.</h2>
           </div>
 
           <p>
-            From preparing for your first year to handling everyday college
-            life, find straightforward advice for the things that actually
-            matter.
+            Starting college can mean adjusting to new people,
+            responsibilities and routines. Get straightforward advice
+            for preparing for your first year and managing everyday
+            student life.
           </p>
         </div>
 
@@ -78,15 +79,51 @@ export default function CollegeLifePage() {
         <div className="info-box">
           <p className="eyebrow">FIRST YEAR</p>
 
-          <h2>
-            You don't have to figure everything out at once.
-          </h2>
+          <h2>You don't have to figure everything out at once.</h2>
 
           <p>
-            College involves a lot of new responsibilities, routines and
-            decisions. Start with the basics, build a routine that works for
-            you and give yourself time to adjust.
+            College involves new responsibilities, routines and
+            decisions. Start by organising your essentials, learning
+            your timetable and keeping track of important deadlines.
+            If you live in a hostel, plan your everyday supplies and
+            spending as well. Give yourself time to adjust instead
+            of expecting everything to feel familiar immediately.
           </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">MAKE COLLEGE EASIER</p>
+            <h2>Three habits worth building early.</h2>
+          </div>
+        </div>
+
+        <div className="guide-grid">
+          <div className="guide-card">
+            <h3>Keep your essentials organised</h3>
+            <p>
+              Prepare your study materials, everyday items and
+              important documents so you can find them when needed.
+            </p>
+          </div>
+
+          <div className="guide-card">
+            <h3>Build a realistic routine</h3>
+            <p>
+              Make time for classes, studying, meals, rest and
+              activities you enjoy. Choose a routine you can maintain.
+            </p>
+          </div>
+
+          <div className="guide-card">
+            <h3>Track important tasks</h3>
+            <p>
+              Keep assignment deadlines, exam dates and college
+              activities in one place to reduce last-minute stress.
+            </p>
+          </div>
         </div>
       </section>
     </main>
