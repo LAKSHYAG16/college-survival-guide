@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 const tools = [
@@ -5,7 +6,7 @@ const tools = [
     icon: "∑",
     title: "CGPA Calculator",
     description:
-      "Calculate your CGPA quickly using your semester grades and credits.",
+      "Calculate your CGPA using semester grades and credits. Use it to understand your academic performance and track your progress.",
     href: "/tools/cgpa-calculator",
     status: "AVAILABLE",
   },
@@ -13,7 +14,7 @@ const tools = [
     icon: "%",
     title: "Attendance Calculator",
     description:
-      "Find out your current attendance percentage and how many classes you need to attend or can miss.",
+      "Calculate your current attendance percentage and find out how many more classes you need to attend to reach your target.",
     href: "/tools/attendance-calculator",
     status: "AVAILABLE",
   },
@@ -21,7 +22,7 @@ const tools = [
     icon: "✓",
     title: "Study Planner",
     description:
-      "Create a simple study plan around your classes, assignments and upcoming exams.",
+      "Organize your classes, assignments and upcoming exams into a practical study plan that helps you manage your time.",
     href: "/tools/study-planner",
     status: "AVAILABLE",
   },
@@ -30,7 +31,7 @@ const tools = [
 export const metadata = {
   title: "Student Tools & Calculators",
   description:
-    "Free student tools including a CGPA calculator, attendance calculator and study planner designed for college students.",
+    "Use free student tools including a CGPA calculator, attendance calculator and study planner to manage college academics and everyday tasks.",
   alternates: {
     canonical: "/tools",
   },
@@ -49,8 +50,10 @@ export default function ToolsPage() {
         </h1>
 
         <p>
-          Simple calculators and utilities designed to help college students
-          get quick answers and manage everyday academic tasks.
+          Get quick answers to common academic questions with free,
+          easy-to-use student calculators and planning tools. Whether
+          you're checking your grades, tracking attendance or organizing
+          exam preparation, start here.
         </p>
       </section>
 
@@ -59,14 +62,13 @@ export default function ToolsPage() {
           <div>
             <p className="eyebrow">TOOLS</p>
 
-            <h2>
-              Get the answer. Get back to college.
-            </h2>
+            <h2>Get the answer. Get back to college.</h2>
           </div>
 
           <p>
-            Use these simple tools for common student calculations and
-            planning tasks.
+            Choose a tool based on what you need to calculate or organize.
+            Each tool focuses on a common student task, so you can spend
+            less time working things out manually.
           </p>
         </div>
 
@@ -74,8 +76,9 @@ export default function ToolsPage() {
           {tools.map((tool) => (
             <Link
               href={tool.href}
-              className={`tool-card ${tool.status === "COMING SOON" ? "tool-disabled" : ""
-                }`}
+              className={`tool-card ${
+                tool.status === "COMING SOON" ? "tool-disabled" : ""
+              }`}
               key={tool.title}
             >
               <span className="tool-icon">{tool.icon}</span>
@@ -97,16 +100,57 @@ export default function ToolsPage() {
       </section>
 
       <section className="section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">HOW TO USE THESE TOOLS</p>
+
+            <h2>Start with your biggest academic concern.</h2>
+          </div>
+        </div>
+
+        <div className="guide-grid">
+          <div className="guide-card">
+            <h3>Check your academic progress</h3>
+            <p>
+              Use the CGPA calculator to work out your grade average
+              using the information requested by the calculator.
+              Check your university's grading rules when interpreting
+              your result.
+            </p>
+          </div>
+
+          <div className="guide-card">
+            <h3>Keep track of attendance</h3>
+            <p>
+              Use the attendance calculator to understand your current
+              percentage and plan future classes. Always check your
+              institution's minimum attendance requirement before
+              making decisions about absences.
+            </p>
+          </div>
+
+          <div className="guide-card">
+            <h3>Plan your study sessions</h3>
+            <p>
+              Use the study planner to organize upcoming work into
+              manageable tasks. Give priority to close deadlines,
+              difficult subjects and topics that need more revision.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
         <div className="info-box">
           <p className="eyebrow">BUILT FOR STUDENTS</p>
 
-          <h2>
-            Small tools can save a surprising amount of time.
-          </h2>
+          <h2>Small tools can save a surprising amount of time.</h2>
 
           <p>
-            These tools are designed to solve simple problems students deal
-            with regularly, without requiring an account or complicated setup.
+            These tools are designed to simplify everyday academic
+            tasks without unnecessary setup. Use their results as
+            a planning aid, and refer to your college's official
+            rules for grading, attendance and academic requirements.
           </p>
         </div>
       </section>
