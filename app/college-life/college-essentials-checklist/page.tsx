@@ -6,14 +6,14 @@ import {
 import Link from "next/link";
 
 export const metadata = {
-  title: "College Essentials Checklist for First-Year Students",
+  title: "College Essentials Checklist",
   description:
     "A practical college essentials checklist for first-year students covering documents, clothing, electronics, study supplies, personal items and hostel essentials.",
   alternates: {
     canonical: "/college-life/college-essentials-checklist",
   },
   openGraph: {
-    title: "College Essentials Checklist for First-Year Students",
+    title: "College Essentials Checklist",
     description:
       "A practical college essentials checklist covering documents, clothes, electronics, study supplies, hostel items and everyday necessities for first-year students.",
     url: "https://college-survival-guide-plum.vercel.app/college-life/college-essentials-checklist",
@@ -32,7 +32,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "College Essentials Checklist for First-Year Students",
+    title: "College Essentials Checklist",
     description:
       "A practical checklist of essentials for first-year college students.",
     images: [
@@ -120,7 +120,7 @@ const sections = [
 
 export default function CollegeEssentialsChecklistPage() {
   const article = articleSchema({
-    title: "College Essentials Checklist for First-Year Students",
+    title: "College Essentials Checklist",
     description:
       "A practical college essentials checklist covering documents, clothes, electronics, study supplies, hostel items and everyday necessities for first-year students.",
     url: "https://college-survival-guide-plum.vercel.app/college-life/college-essentials-checklist",
