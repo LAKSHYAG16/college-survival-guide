@@ -1,5 +1,6 @@
-
+import Script from "next/script";
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { websiteSchema, organizationSchema } from "@/lib/structured-data";
 import Navbar from "@/components/Navbar";
@@ -11,9 +12,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-  default: "College Survival Guide for Students",
-  template: "%s | College Survival Guide",
-},
+    default: "College Survival Guide for Students",
+    template: "%s | College Survival Guide",
+  },
 
   description:
     "Practical guides, student tools and useful advice for academics, careers, money, productivity and everyday college life.",
@@ -72,10 +73,29 @@ export default function RootLayout({
 }>) {
   const website = websiteSchema();
   const organization = organizationSchema();
+  const measurementId = process.env.NEXT_PUBLIC_GA_ID;
 
   return (
     <html lang="en">
       <body>
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+      `}
+            </Script>
+          </>
+        )}
         <Navbar />
         <Breadcrumbs />
 
@@ -94,6 +114,8 @@ export default function RootLayout({
             __html: JSON.stringify(organization),
           }}
         />
+
+        {measurementId && <GoogleAnalytics gaId={measurementId} />}
       </body>
     </html>
   );
