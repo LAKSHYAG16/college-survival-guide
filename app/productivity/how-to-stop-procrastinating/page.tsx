@@ -6,14 +6,14 @@ import {
 import Link from "next/link";
 
 export const metadata = {
-  title: "How to Stop Procrastinating as a College Student",
+  title: "How to Stop Procrastinating in College",
   description:
     "Learn how to stop procrastinating as a college student with practical techniques for starting assignments, studying consistently, managing distractions and meeting deadlines.",
   alternates: {
     canonical: "/productivity/how-to-stop-procrastinating",
   },
   openGraph: {
-    title: "How to Stop Procrastinating as a College Student",
+    title: "How to Stop Procrastinating in College",
     description:
       "Practical techniques to stop procrastinating, break assignments into smaller tasks and build consistent study habits.",
     url: "https://college-survival-guide-plum.vercel.app/productivity/how-to-stop-procrastinating",
@@ -32,7 +32,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "How to Stop Procrastinating as a College Student",
+    title: "How to Stop Procrastinating in College",
     description:
       "Practical ways for college students to stop procrastinating and stay consistent.",
     images: [
@@ -75,7 +75,7 @@ const antiProcrastinationSteps = [
 
 export default function StopProcrastinatingPage() {
   const article = articleSchema({
-    title: "How to Stop Procrastinating as a College Student",
+    title: "How to Stop Procrastinating in College",
     description:
       "Practical techniques for college students to reduce procrastination, start assignments earlier, manage distractions and build consistent study habits.",
     url: "https://college-survival-guide-plum.vercel.app/productivity/how-to-stop-procrastinating",

@@ -6,14 +6,14 @@ import {
 import Link from "next/link";
 
 export const metadata = {
-  title: "Student Budget Guide: Managing Monthly Expenses",
+  title: "Student Budget Guide",
   description:
     "Learn how to manage monthly expenses as a college student with a simple student budget, spending categories, saving strategies and practical money-management tips.",
   alternates: {
     canonical: "/money/student-budget-guide",
   },
   openGraph: {
-    title: "Student Budget Guide: Managing Monthly Expenses",
+    title: "Student Budget Guide",
     description:
       "A practical guide to managing monthly expenses, budgeting, saving money and tracking spending as a college student.",
     url: "https://college-survival-guide-plum.vercel.app/money/student-budget-guide",
@@ -32,7 +32,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Student Budget Guide: Managing Monthly Expenses",
+    title: "Student Budget Guide",
     description:
       "Learn how to manage monthly expenses, track spending and save money as a college student.",
     images: [
@@ -75,7 +75,7 @@ const budgetingSteps = [
 
 export default function StudentBudgetGuidePage() {
   const article = articleSchema({
-    title: "Student Budget Guide: Managing Monthly Expenses",
+    title: "Student Budget Guide",
     description:
       "A practical student budget guide covering monthly expenses, essential spending, saving money, hostel costs and simple ways to track your spending.",
     url: "https://college-survival-guide-plum.vercel.app/money/student-budget-guide",
