@@ -6,14 +6,14 @@ import {
 import Link from "next/link";
 
 export const metadata = {
-  title: "How to Study Effectively for College Exams",
+  title: "How to Study for College Exams Effectively",
   description:
     "Learn how to study effectively for college exams with practical revision strategies, study planning techniques, active recall, practice questions and exam preparation tips.",
   alternates: {
     canonical: "/academics/how-to-study-for-college-exams",
   },
   openGraph: {
-    title: "How to Study Effectively for College Exams",
+    title: "How to Study for College Exams Effectively",
     description:
       "Practical study strategies for college exams, including active recall, spaced revision, practice questions and focused study sessions.",
     url: "https://college-survival-guide-plum.vercel.app/academics/how-to-study-for-college-exams",
@@ -32,7 +32,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "How to Study Effectively for College Exams",
+    title: "How to Study for College Exams Effectively",
     description:
       "Practical study strategies for preparing effectively for college exams.",
     images: [
