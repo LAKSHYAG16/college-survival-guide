@@ -1,12 +1,13 @@
 import Script from "next/script";
 import type { Metadata } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { websiteSchema, organizationSchema } from "@/lib/structured-data";
 import Navbar from "@/components/Navbar";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const siteUrl = "https://college-survival-guide-plum.vercel.app";
+
+const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -73,29 +74,31 @@ export default function RootLayout({
 }>) {
   const website = websiteSchema();
   const organization = organizationSchema();
-  const measurementId = process.env.NEXT_PUBLIC_GA_ID;
 
   return (
     <html lang="en">
       <body>
-        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+        {measurementId && (
           <>
             <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+              src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
               strategy="afterInteractive"
             />
 
             <Script id="google-analytics" strategy="afterInteractive">
               {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){window.dataLayer.push(arguments);}
-        window.gtag = gtag;
-        gtag('js', new Date());
-        gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-      `}
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                  window.dataLayer.push(arguments);
+                }
+                window.gtag = gtag;
+                gtag('js', new Date());
+                gtag('config', '${measurementId}');
+              `}
             </Script>
           </>
         )}
+
         <Navbar />
         <Breadcrumbs />
 
@@ -114,8 +117,6 @@ export default function RootLayout({
             __html: JSON.stringify(organization),
           }}
         />
-
-        {measurementId && <GoogleAnalytics gaId={measurementId} />}
       </body>
     </html>
   );
