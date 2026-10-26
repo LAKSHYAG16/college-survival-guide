@@ -13,7 +13,7 @@ export const metadata = {
     canonical: "/academics/how-to-study-for-college-exams",
   },
   openGraph: {
-    title: "How to Study Effectively for College Exams",
+    title: "How to Study for College Exams Effectively",
     description:
       "Practical study strategies for college exams, including active recall, spaced revision, practice questions and focused study sessions.",
     url: "https://college-survival-guide-plum.vercel.app/academics/how-to-study-for-college-exams",
@@ -75,7 +75,7 @@ const studyPlan = [
 
 export default function StudyForCollegeExamsPage() {
   const article = articleSchema({
-    title: "How to Study Effectively for College Exams",
+    title: "How to Study for College Exams Effectively",
     description:
       "Practical study techniques for college exams including active recall, spaced revision, practice questions, focused study sessions and exam preparation.",
     url: "https://college-survival-guide-plum.vercel.app/academics/how-to-study-for-college-exams",

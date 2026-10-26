@@ -11,7 +11,7 @@ const guides = [
 ];
 
 export const metadata = {
-  title: "Career & Internship Guides for College Students",
+  title: "College Career & Internship Guides",
   description:
     "Explore internship resume tips, project ideas, GitHub portfolio advice and practical career preparation guides for college students.",
   alternates: {

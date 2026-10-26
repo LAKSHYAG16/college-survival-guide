@@ -11,7 +11,7 @@ const guides = [
 ];
 
 export const metadata = {
-  title: "Productivity & Time Management for College Students",
+  title: "College Productivity & Time Management",
   description:
     "Explore productivity tips and time-management strategies for college students, including beating procrastination, planning assignments and building better study habits.",
   alternates: {
