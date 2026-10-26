@@ -2,16 +2,18 @@
 
 import { useState } from "react";
 
+type AttendanceResult = {
+  percentage: number;
+  classesNeeded: number;
+  classesCanMiss: number;
+};
+
 export default function AttendanceCalculator() {
   const [attended, setAttended] = useState("");
   const [conducted, setConducted] = useState("");
   const [target, setTarget] = useState("75");
-
-  const [result, setResult] = useState<{
-    percentage: number;
-    classesNeeded: number;
-    classesCanMiss: number;
-  } | null>(null);
+  const [result, setResult] = useState<AttendanceResult | null>(null);
+  const [error, setError] = useState("");
 
   function calculateAttendance() {
     const attendedClasses = Number(attended);
@@ -19,16 +21,36 @@ export default function AttendanceCalculator() {
     const targetPercentage = Number(target);
 
     if (
-      !attended ||
-      !conducted ||
-      !target ||
+      attended.trim() === "" ||
+      conducted.trim() === "" ||
+      target.trim() === ""
+    ) {
+      setResult(null);
+      setError("Please fill in all three fields.");
+      return;
+    }
+
+    if (
+      !Number.isInteger(attendedClasses) ||
+      !Number.isInteger(totalClasses) ||
       attendedClasses < 0 ||
       totalClasses <= 0 ||
-      attendedClasses > totalClasses ||
+      attendedClasses > totalClasses
+    ) {
+      setResult(null);
+      setError(
+        "Enter whole numbers for classes. Attended classes must be between zero and total classes conducted."
+      );
+      return;
+    }
+
+    if (
+      !Number.isFinite(targetPercentage) ||
       targetPercentage <= 0 ||
       targetPercentage > 100
     ) {
       setResult(null);
+      setError("Enter a target attendance greater than 0% and at most 100%.");
       return;
     }
 
@@ -55,9 +77,11 @@ export default function AttendanceCalculator() {
 
     setResult({
       percentage: Number(currentPercentage.toFixed(2)),
-      classesNeeded,
+      classesNeeded: Math.max(0, classesNeeded),
       classesCanMiss: Math.max(0, classesCanMiss),
     });
+
+    setError("");
   }
 
   function resetCalculator() {
@@ -65,6 +89,7 @@ export default function AttendanceCalculator() {
     setConducted("");
     setTarget("75");
     setResult(null);
+    setError("");
   }
 
   return (
@@ -79,8 +104,9 @@ export default function AttendanceCalculator() {
         </h1>
 
         <p>
-          Calculate your current attendance and find out how many classes
-          you need to attend or can miss to reach your target percentage.
+          Calculate your current attendance and estimate how many
+          classes you need to attend or can miss to reach your
+          target percentage.
         </p>
       </section>
 
@@ -89,67 +115,65 @@ export default function AttendanceCalculator() {
           <div className="calculator-header">
             <div>
               <p className="eyebrow">ATTENDANCE CALCULATOR</p>
-
               <h2>Enter your attendance</h2>
             </div>
 
             <p>
-              Enter the number of classes attended, classes conducted and
-              your required attendance percentage.
+              Enter classes attended, classes conducted, and your
+              required attendance percentage.
             </p>
           </div>
 
           <div className="attendance-input-grid">
             <div className="calculator-field">
-              <label htmlFor="attended">
-                Classes Attended
-              </label>
+              <label htmlFor="attended">Classes Attended</label>
 
               <input
                 id="attended"
                 type="number"
                 min="0"
-                placeholder="e.g. 32"
+                step="1"
+                placeholder="e.g. 34"
                 value={attended}
-                onChange={(event) =>
-                  setAttended(event.target.value)
-                }
+                onChange={(event) => {
+                  setAttended(event.target.value);
+                  setError("");
+                }}
               />
             </div>
 
             <div className="calculator-field">
-              <label htmlFor="conducted">
-                Classes Conducted
-              </label>
+              <label htmlFor="conducted">Classes Conducted</label>
 
               <input
                 id="conducted"
                 type="number"
                 min="1"
+                step="1"
                 placeholder="e.g. 40"
                 value={conducted}
-                onChange={(event) =>
-                  setConducted(event.target.value)
-                }
+                onChange={(event) => {
+                  setConducted(event.target.value);
+                  setError("");
+                }}
               />
             </div>
 
             <div className="calculator-field">
-              <label htmlFor="target">
-                Target Attendance
-              </label>
+              <label htmlFor="target">Target Attendance</label>
 
               <div className="percentage-input">
                 <input
                   id="target"
                   type="number"
-                  min="1"
+                  min="0.1"
                   max="100"
                   step="0.1"
                   value={target}
-                  onChange={(event) =>
-                    setTarget(event.target.value)
-                  }
+                  onChange={(event) => {
+                    setTarget(event.target.value);
+                    setError("");
+                  }}
                 />
 
                 <span>%</span>
@@ -175,8 +199,14 @@ export default function AttendanceCalculator() {
             </button>
           </div>
 
+          {error && (
+            <p role="alert" className="attendance-message">
+              {error}
+            </p>
+          )}
+
           {result !== null && (
-            <div className="attendance-result">
+            <div className="attendance-result" aria-live="polite">
               <p className="eyebrow">CURRENT ATTENDANCE</p>
 
               <div className="cgpa-value">
@@ -186,36 +216,28 @@ export default function AttendanceCalculator() {
               {result.percentage < Number(target) ? (
                 <div className="attendance-message">
                   <h3>
-                    You need to attend{" "}
-                    {result.classesNeeded} more{" "}
-                    {result.classesNeeded === 1
-                      ? "class"
-                      : "classes"}
+                    You need to attend {result.classesNeeded}{" "}
+                    {result.classesNeeded === 1 ? "more class" : "more classes"}
                   </h3>
 
                   <p>
                     Attend the next{" "}
                     <strong>{result.classesNeeded}</strong>{" "}
-                    consecutive classes to reach approximately{" "}
-                    <strong>{target}%</strong> attendance.
+                    consecutive classes without missing any to reach
+                    at least your <strong>{target}%</strong> target.
                   </p>
                 </div>
               ) : (
                 <div className="attendance-message">
                   <h3>
-                    You can miss{" "}
-                    {result.classesCanMiss}{" "}
-                    {result.classesCanMiss === 1
-                      ? "class"
-                      : "classes"}
+                    You can miss {result.classesCanMiss}{" "}
+                    {result.classesCanMiss === 1 ? "class" : "classes"}
                   </h3>
 
                   <p>
-                    You can miss up to{" "}
+                    Based on your entries, you can miss up to{" "}
                     <strong>{result.classesCanMiss}</strong>{" "}
-                    {result.classesCanMiss === 1
-                      ? "class"
-                      : "classes"}{" "}
+                    {result.classesCanMiss === 1 ? "class" : "classes"}{" "}
                     and remain at or above your{" "}
                     <strong>{target}%</strong> target.
                   </p>
@@ -231,13 +253,12 @@ export default function AttendanceCalculator() {
           <p className="eyebrow">HOW IT WORKS</p>
 
           <h2>
-            Attendance is simply the percentage of classes you attended.
+            Attendance is the percentage of classes you attended.
           </h2>
 
           <p>
-            Your current attendance is calculated by dividing the number
-            of classes attended by the total number of classes conducted
-            and multiplying the result by 100.
+            Divide the number of classes attended by the total number
+            of classes conducted and multiply the result by 100.
           </p>
 
           <p>
