@@ -2,11 +2,18 @@ import type { Metadata } from "next";
 import StudyPlanner from "./StudyPlanner";
 
 export const metadata: Metadata = {
-  title: "Study Planner for College Students",
+  title: "College Study Planner & Task Organizer",
   description:
-    "Free study planner for college students. Organize subjects, study tasks, deadlines and available study time into a simple study plan.",
+    "Plan your college study sessions with this free study planner. Organize subjects, assignments, deadlines and study hours into a clear, deadline-based plan.",
   alternates: {
     canonical: "/tools/study-planner",
+  },
+  openGraph: {
+    title: "College Study Planner & Task Organizer",
+    description:
+      "Organize college assignments, revision tasks and deadlines with a free study planner.",
+    url: "/tools/study-planner",
+    type: "website",
   },
 };
 

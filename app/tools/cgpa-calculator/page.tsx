@@ -4,7 +4,7 @@ import CGPACalculator from "./CGPACalculator";
 export const metadata: Metadata = {
   title: "CGPA Calculator for College Students",
   description:
-    "Free CGPA calculator for college students. Enter your subject credits and grades to calculate your semester CGPA quickly.",
+    "Free CGPA calculator for college students. Calculate your credit-weighted CGPA using subject credits and grade points, with a worked example and calculation guide.",
   alternates: {
     canonical: "/tools/cgpa-calculator",
   },
