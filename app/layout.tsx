@@ -1,13 +1,13 @@
 import Script from "next/script";
 import type { Metadata } from "next";
 import "./globals.css";
+
 import { websiteSchema, organizationSchema } from "@/lib/structured-data";
 import Navbar from "@/components/Navbar";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 const siteUrl = "https://college-survival-guide-plum.vercel.app";
-
-const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const measurementId = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -85,15 +85,14 @@ export default function RootLayout({
               strategy="afterInteractive"
             />
 
-            <Script id="google-analytics" strategy="afterInteractive">
+            <Script id="google-analytics-init" strategy="afterInteractive">
               {`
                 window.dataLayer = window.dataLayer || [];
-                function gtag() {
+                window.gtag = function() {
                   window.dataLayer.push(arguments);
-                }
-                window.gtag = gtag;
-                gtag('js', new Date());
-                gtag('config', '${measurementId}');
+                };
+                window.gtag('js', new Date());
+                window.gtag('config', '${measurementId}');
               `}
             </Script>
           </>
