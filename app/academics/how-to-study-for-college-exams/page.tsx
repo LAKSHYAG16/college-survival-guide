@@ -6,7 +6,7 @@ import {
 import Link from "next/link";
 
 export const metadata = {
-  title: "How to Study for College Exams Effectively",
+  title: "Study Tips for College Exams",
   description:
     "Learn how to study effectively for college exams with practical revision strategies, study planning techniques, active recall, practice questions and exam preparation tips.",
   alternates: {
