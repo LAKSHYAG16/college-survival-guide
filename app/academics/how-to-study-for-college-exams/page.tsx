@@ -13,7 +13,7 @@ export const metadata = {
     canonical: "/academics/how-to-study-for-college-exams",
   },
   openGraph: {
-    title: "How to Study for College Exams Effectively",
+    title: "How to Study Effectively for College Exams",
     description:
       "Practical study strategies for college exams, including active recall, spaced revision, practice questions and focused study sessions.",
     url: "https://college-survival-guide-plum.vercel.app/academics/how-to-study-for-college-exams",

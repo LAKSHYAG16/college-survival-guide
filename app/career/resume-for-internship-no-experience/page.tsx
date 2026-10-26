@@ -2,7 +2,7 @@ import { articleSchema, faqSchema } from "@/lib/structured-data";
 import Link from "next/link";
 
 export const metadata = {
-  title: "How to Make a Resume for an Internship With No Experience",
+  title: "Internship Resume With No Experience",
   description:
     "Learn how to make a resume for an internship with no experience. See a practical resume sample, what to include, how to present projects and skills, and how to structure your first student resume.",
   alternates: {
@@ -10,7 +10,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "How to Make a Resume for an Internship With No Experience",
+    title: "Internship Resume With No Experience",
     description:
       "A practical guide and resume sample for creating an internship resume when you have little or no professional experience.",
     url: "https://college-survival-guide-plum.vercel.app/career/resume-for-internship-no-experience",
@@ -29,7 +29,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "How to Make a Resume for an Internship With No Experience",
+    title: "Internship Resume With No Experience",
     description:
       "A practical guide and resume sample for creating an internship resume when you have little or no professional experience.",
     images: [
@@ -107,7 +107,7 @@ const resumeSections = [
 
 export default function ResumeInternshipPage() {
   const article = articleSchema({
-    title: "How to Make a Resume for an Internship With No Experience",
+    title: "Internship Resume With No Experience",
     description:
       "Learn how to create a strong internship resume with no previous work experience, including a practical resume sample, education, projects, skills, certifications and achievements.",
     url: "https://college-survival-guide-plum.vercel.app/career/resume-for-internship-no-experience",
