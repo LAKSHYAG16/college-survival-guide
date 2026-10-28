@@ -10,6 +10,7 @@ const navLinks = [
   { name: "College Life", href: "/college-life" },
   { name: "Productivity", href: "/productivity" },
   { name: "Tools", href: "/tools" },
+  { name: "About Us", href: "/about" },
 ];
 
 export default function Navbar() {
