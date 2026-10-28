@@ -185,10 +185,11 @@ export default function ResumeInternshipPage() {
           </div>
 
           <p className="article-lead">
-            Not having professional experience does not mean you have nothing
-            to put on a resume. As a college student, your education, projects,
-            technical skills, coursework and extracurricular activities can
-            demonstrate what you are capable of.
+            Creating a resume for a student with no experience can feel
+            challenging, but you have more to showcase than you might think.
+            A resume for a no-experience student can highlight your education,
+            projects, technical skills, coursework and extracurricular activities
+            to demonstrate your abilities when applying for an internship.
           </p>
 
           <p>
@@ -215,7 +216,7 @@ export default function ResumeInternshipPage() {
 
           {/* Resume sample */}
           <section className="article-section">
-            <h2>Resume Sample for an Internship With No Experience</h2>
+            <h2>Internship Resume Examples: A Sample for Students</h2>
 
             <p>
               If you are applying for your first internship, your resume does
@@ -391,6 +392,27 @@ export default function ResumeInternshipPage() {
               <li>Use a readable font and appropriate spacing.</li>
               <li>Save the resume in the format requested by the employer.</li>
             </ul>
+
+            <p>
+              For additional guidance, see the{" "}
+              <a
+                href="https://careerservices.upenn.edu/channels/resume/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                University of Pennsylvania's resume-writing guide
+              </a>
+              , which explains resume structure, formatting, and how to describe your
+              skills and accomplishments. You can also consult{" "}
+              <a
+                href="https://careers.gmu.edu/create-resume"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                George Mason University's resume guide
+              </a>
+              {" "}for advice on tailoring your resume and using relevant keywords.
+            </p>
           </section>
 
           {/* No experience */}
