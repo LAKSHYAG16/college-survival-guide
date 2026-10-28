@@ -89,17 +89,22 @@ export default function StudyForCollegeExamsPage() {
     {
       question: "How many hours should I study for college exams?",
       answer:
-        "The ideal amount varies by subject and student. Consistent focused study sessions are generally more useful than simply counting hours.",
+        "There is no single number that works for every student. The useful measure is whether your study sessions are helping you understand, recall and apply the material while leaving enough time for sleep and other responsibilities.",
     },
     {
-      question: "What is the most effective way to study for exams?",
+      question: "Is studying the night before an exam effective?",
       answer:
-        "Active recall, spaced revision and practice questions are useful techniques for remembering and applying information.",
+        "Last-minute revision can be useful for reviewing material you already know, but relying entirely on one night leaves little time for identifying and fixing gaps in understanding.",
     },
     {
-      question: "How should I prepare during the final week before exams?",
+      question: "What is the best way to remember what I study?",
       answer:
-        "Focus on reviewing important concepts, practicing questions, identifying weak areas and avoiding learning large amounts of completely new material at the last minute.",
+        "Active recall, spaced revision and practice questions are commonly used approaches for strengthening your ability to retrieve information.",
+    },
+    {
+      question: "What are the best ways to study for college exams?",
+      answer:
+        "Useful approaches include understanding concepts, active recall, spaced revision, practice questions, explaining concepts in your own words and reviewing mistakes.",
     },
   ]);
 
